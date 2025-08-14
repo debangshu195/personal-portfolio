@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debangshu Mukherjee - Portfolio</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='75' font-size='70' font-weight='bold' text-anchor='middle' font-family='Arial' fill='%234CB7E1'>DM</text></svg>"
+        type="image/svg+xml">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            /* Slate-900 */
+            color: #e2e8f0;
+            /* Slate-200 */
+        }
+
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+            /* Slate-800 */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #64748b;
+            /* Slate-500 */
+            border-radius: 6px;
+            border: 3px solid #1e293b;
+            /* Slate-800 */
+        }
+    </style>
+</head>
+
+<body class="leading-relaxed">
+
+    <!-- Navigation Bar -->
+    <header class="bg-slate-800 bg-opacity-70 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-sky-400 hover:text-sky-300 transition duration-300">Debangshu</a>
+
+            <!-- Hamburger button (mobile only) -->
+            <button id="menu-btn" class="block md:hidden text-slate-200 hover:text-sky-400 focus:outline-none">
+                <!-- Icon: 3 lines -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
+            <!-- Navigation links -->
+            <div id="menu"
+                class="hidden flex-col absolute top-full left-0 w-full bg-slate-800 md:static md:flex md:flex-row md:space-x-6 md:w-auto md:bg-transparent">
+                <a href="#about"
+                    class="nav-link block px-6 py-3 md:py-0 text-slate-200 hover:text-sky-400 transition duration-300 font-medium">About</a>
+                <a href="#projects"
+                    class="nav-link block px-6 py-3 md:py-0 text-slate-200 hover:text-sky-400 transition duration-300 font-medium">Projects</a>
+                <a href="#skills"
+                    class="nav-link block px-6 py-3 md:py-0 text-slate-200 hover:text-sky-400 transition duration-300 font-medium">Skills</a>
+                <a href="assets/Debangshu_Mukherjee_Resume.pdf" download
+                    class="block px-6 py-3 md:py-0 bg-green-600 hover:bg-green-500 text-white font-medium rounded-full shadow-lg transition duration-300 md:inline-block">Download
+                    Resume</a>
+                <a href="#contact"
+                    class="block px-6 py-3 md:py-0 bg-sky-600 hover:bg-sky-500 text-white font-bold rounded-full shadow-lg transition duration-300 md:inline-block">Contact</a>
+            </div>
+        </nav>
+        <!-- <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-sky-400 hover:text-sky-300 transition duration-300">Debangshu</a>
+            <div class="space-x-4 md:space-x-6 flex items-center">
+                <a href="#about"
+                    class="nav-link text-slate-200 hover:text-sky-400 transition duration-300 font-medium">About</a>
+                <a href="#projects"
+                    class="nav-link text-slate-200 hover:text-sky-400 transition duration-300 font-medium">Projects</a>
+                <a href="#skills"
+                    class="nav-link text-slate-200 hover:text-sky-400 transition duration-300 font-medium">Skills</a>
+                <a href="assets/Debangshu_Mukherjee_Resume.pdf" download
+                    class="bg-green-600 hover:bg-green-500 text-white font-medium py-2 px-4 rounded-full shadow-lg transition duration-300">Download
+                    Resume</a>
+                <a href="#contact"
+                    class="nav-link bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300">Contact</a>
+            </div>
+        </nav> -->
+        <!-- <nav class="container mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+            <a href="#"
+                class="text-2xl font-bold text-sky-400 hover:text-sky-300 transition duration-300 mb-4 md:mb-0">Debangshu</a>
+            
+            <div class="nav-links-container flex flex-wrap justify-center md:space-x-4">
+                <a href="#about"
+                    class="nav-link text-slate-200 hover:text-sky-400 transition duration-300 font-medium py-2 px-4">About</a>
+                <a href="#projects"
+                    class="nav-link text-slate-200 hover:text-sky-400 transition duration-300 font-medium py-2 px-4">Projects</a>
+                <a href="#skills"
+                    class="nav-link text-slate-200 hover:text-sky-400 transition duration-300 font-medium py-2 px-4">Skills</a>
+              
+                <a href="Debangshu_Mukherjee_Resume.pdf" download
+                    class="bg-green-600 hover:bg-green-500 text-white font-medium py-2 px-4 rounded-full shadow-lg transition duration-300">Download
+                    Resume</a>
+                <a href="#contact"
+                    class="nav-link bg-sky-600 hover:bg-sky-500 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300">Contact</a>
+            </div>
+        </nav> -->
+    </header>
+
+    <main class="pt-24">
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-6 py-16 md:py-24 text-center">
+            <div class="flex flex-col items-center justify-center">
+                <!-- A placeholder image is used here. You can replace this with your actual photo. -->
+                <img src="assets/photo.jpg"
+                    onerror="this.src='https://placehold.co/200x200/475569/ffffff?text=Debangshu';"
+                    alt="Debangshu Mukherjee's Profile Picture"
+                    class="w-48 h-53 rounded-full object-cover shadow-xl mb-6 border-4 border-sky-400">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-4">Hello, I'm <span
+                        class="text-sky-400">Debangshu Mukherjee</span></h1>
+                <p class="max-w-2xl text-lg text-slate-300">
+                    A passionate B.Tech ECE student from Techno Main Salt Lake with a strong interest in web
+                    development. I'm skilled in creating responsive user interfaces and building applications using
+                    HTML, CSS, and JavaScript. I am dedicated to learning new technologies and solving real-world
+                    problems through code.
+                </p>
+                <div class="mt-8 flex justify-center space-x-4">
+                    <a href="#projects"
+                        class="bg-slate-700 hover:bg-slate-600 text-white font-medium py-3 px-6 rounded-full shadow-lg transition duration-300">View
+                        Projects</a>
+                    <a href="assets/Debangshu_Mukherjee_Resume.pdf" download
+                        class="border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white font-medium py-3 px-6 rounded-full shadow-lg transition duration-300">Download
+                        Resume</a>
+                    <a href="https://github.com/debangshu195" target="_blank"
+                        class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-3 px-6 rounded-full shadow-lg transition duration-300">
+                        <svg class="w-6 h-6 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.83 9.504.475.093.68-.217.68-.483 0-.237-.008-.887-.013-1.745-2.782.605-3.37-1.343-3.37-1.343-.454-1.158-1.11-1.465-1.11-1.465-.908-.62.069-.608.069-.608 1.004.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.957 0-1.091.39-1.984 1.029-2.686-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.022A9.962 9.962 0 0112 5.864c.85.006 1.70.11 2.502.324 1.909-1.292 2.747-1.022 2.747-1.022.546 1.378.203 2.397.1 2.65.64.702 1.028 1.595 1.028 2.686 0 3.854-2.339 4.701-4.566 4.951.359.31.678.924.678 1.865 0 1.338-.012 2.419-.012 2.747 0 .268.204.578.685.483C19.138 20.2 22 16.444 22 12.017 22 6.484 17.522 2 12 2z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-slate-900 py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white text-center mb-12">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Card 1: MStreaming - Frontend Clone of Netflix -->
+                    <div
+                        class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                       
+                        <img src="https://placehold.co/600x400/334155/ffffff?text=MStreaming"
+                            alt="MStreaming Project Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sky-400 mb-2">MStreaming - Frontend Clone of Netflix</h3>
+                            <p class="text-slate-300 mb-4">Built a responsive OTT streaming website frontend inspired by
+                                Netflix. It features a clean UI, dark/light mode toggle, language selector, static FAQ
+                                section with collapse answers, mock email validation & sign-in UI.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-slate-700 text-white text-xs font-semibold px-2 py-1 rounded-full">HTML</span>
+                                <span
+                                    class="bg-slate-700 text-white text-xs font-semibold px-2 py-1 rounded-full">CSS</span>
+                                <span
+                                    class="bg-slate-700 text-white text-xs font-semibold px-2 py-1 rounded-full">JavaScript</span>
+                            </div>
+                            <div class="flex space-x-2">
+
+                                <a href="https://github.com/debangshu195/M-Streaming-" target="_blank"
+                                    class="bg-sky-600 hover:bg-sky-500 text-white font-medium py-2 px-4 rounded-full transition duration-300">GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 (Placeholder) -->
+                    <div
+                        class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                       
+                        <img src="https://placehold.co/600x400/334155/ffffff?text=Personal Portfolio"
+                            alt="MStreaming Project Screenshot" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-sky-400 mb-2">Personal Portfolio Website</h3>
+                            <p class="text-slate-300 mb-4">A fully responsive personal portfolio built using HTML, CSS, and TailwindCSS. Includes smooth navigation with a mobile-friendly hamburger menu and dedicated sections for About, Skills, Projects, and Contact. The contact form is designed as a demo feature to showcase form layout and styling.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="bg-slate-700 text-white text-xs font-semibold px-2 py-1 rounded-full">HTML</span>
+                                <span
+                                    class="bg-slate-700 text-white text-xs font-semibold px-2 py-1 rounded-full">Tailwind CSS</span>
+                                <span
+                                    class="bg-slate-700 text-white text-xs font-semibold px-2 py-1 rounded-full">JavaScript</span>
+                            </div>
+                            <div class="flex space-x-2">
+
+                                <a href="https://github.com/debangshu195/M-Streaming-" target="_blank"
+                                    class="bg-sky-600 hover:bg-sky-500 text-white font-medium py-2 px-4 rounded-full transition duration-300">GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container mx-auto px-6 py-16 md:py-24">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white text-center mb-12">My Skills</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">HTML5</span>
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">CSS3</span>
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">JavaScript</span>
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">Java</span>
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">C++</span>
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">Figma</span>
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">GitHub</span>
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">Canva</span>
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">Tailwind CSS</span>
+                <span class="bg-sky-600 text-white font-medium px-4 py-2 rounded-full shadow-md">SQL</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-slate-900 py-16 md:py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-extrabold text-white text-center mb-12">Get In Touch</h2>
+                <div class="max-w-lg mx-auto bg-slate-800 p-8 rounded-xl shadow-lg">
+                    <p class="text-center text-slate-300 mb-6">You can reach me via email or connect with me on
+                        LinkedIn.</p>
+                    <div class="flex justify-center space-x-4 mb-6">
+                        <a href="mailto:debangshumukherjee195@gmail.com"
+                            class="bg-sky-600 hover:bg-sky-500 text-white font-bold py-3 px-6 rounded-full transition duration-300">Email
+                            Me</a>
+                        <a href="https://www.linkedin.com/in/debangshu-mukherjee-15a77223a/" target="_blank"
+                            class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">LinkedIn</a>
+                    </div>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-slate-300 font-medium mb-1">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-3 bg-slate-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
+                                placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-slate-300 font-medium mb-1">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-3 bg-slate-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
+                                placeholder="your@email.com" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-slate-300 font-medium mb-1">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="w-full px-4 py-3 bg-slate-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-sky-400"
+                                placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-sky-600 hover:bg-sky-500 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">Send
+                            Message</button>
+                    </form>
+                    <div id="formMessage" class="mt-4 text-center text-green-400 font-medium hidden"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 py-6 text-center text-slate-400">
+        <p>&copy; <span id="year"></span> Debangshu Mukherjee. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Set current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Contact form submission (prevents default behavior and shows a message)
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // In a real application, you would send this data to a server.
+            // For this example, we just show a success message.
+            formMessage.textContent = "Thank you for your message! I'll get back to you soon.";
+            formMessage.classList.remove('hidden');
+            contactForm.reset();
+
+            // Hide the message after a few seconds
+            setTimeout(() => {
+                formMessage.classList.add('hidden');
+            }, 5000);
+        });
+
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
