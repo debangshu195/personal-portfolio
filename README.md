@@ -20,6 +20,7 @@ Showcases my profile, skills, projects, and contact details in a clean and moder
 personal-portfolio/
 ├── index.html   # Contains HTML, CSS, and JS
 └── README.md    # Project documentation
+└── assets/    # Images and media
 ```
 
 ## 📌 Live Demo
