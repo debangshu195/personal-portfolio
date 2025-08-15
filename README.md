@@ -23,7 +23,7 @@ personal-portfolio/
 ```
 
 ## 📌 Live Demo
-🔗 [View Live Site](https://your-vercel-link.vercel.app)
+🔗 [View Live Site](https://personal-portfolio-tau-indol.vercel.app)
 
 ## 📥 Usage
 1. Download or clone the repository:
